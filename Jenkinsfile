@@ -13,7 +13,6 @@ pipeline {
             steps {
                 dir('.') {   // change this if files are in subfolder
                     sh '''
-                        ls -la
                         docker build -t flask-app:latest .
                     '''
                 }
